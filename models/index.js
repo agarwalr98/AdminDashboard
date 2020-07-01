@@ -21,16 +21,18 @@ mongoose.connect( Mongo_Db_Url, {useNewUrlParser: true, useUnifiedTopology: true
             .then((pass) => {
                 userInstance = new User({
                     name: 'name', 
-                    email: 'example@email.com', 
+                    email: 'example1@email.com', 
                     role: 'Admin', 
                     encryptedPassword: pass
                 });
 
                 userInstance.save(function(err){
-                    console.log("Error is occured. ", err);
+                    
                     if (err){
+                        console.log("Error is occured. ", err);
                         throw err;
                     }
+                    console.log("")
                 });
             })
             .catch((err) => {

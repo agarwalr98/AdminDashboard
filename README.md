@@ -14,7 +14,7 @@ An admin panel created using adminBro javascript library
 *  ***password:*** password for your database
 *  ***database***: Name of the database
 5. A default entry will be created in 'users' table in db:
-*  ***email***: 'example@email.com';
+*  ***email***: 'example1@email.com';
 *  ***password***: 'password'
 6. Use the above credentials in next step.
 7. Now run 

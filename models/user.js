@@ -23,9 +23,9 @@ userSchema.pre('drop', (next)=>{
 })
 const User = mongoose.model('User', userSchema);
 
-  // User.remove({}, (err)=>{
-  //   console.log("removed!");
-  // })
+User.remove({}, (err)=>{
+  console.log("users collection is removed!");
+})
 module.exports = {
   User
 }
