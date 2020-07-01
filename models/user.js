@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const userSchema = mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
@@ -23,6 +22,7 @@ userSchema.pre('drop', (next)=>{
   this.deleted_at = Date.now()
 })
 const User = mongoose.model('User', userSchema);
+
   // User.remove({}, (err)=>{
   //   console.log("removed!");
   // })

@@ -13,7 +13,11 @@ An admin panel created using adminBro javascript library
 *  ***username:*** username for your database
 *  ***password:*** password for your database
 *  ***database***: Name of the database
-5. Now run 
+5. A default entry will be created in 'users' table in db:
+*  ***email***: 'example@email.com';
+*  ***password***: 'password'
+6. Use the above credentials in next step.
+7. Now run 
    ```npm run test``` and open your browser at localhost:3000/admin.
 
 
